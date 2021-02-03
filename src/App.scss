@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .form {
+    width: 480px;
+    max-height: 640px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 34px 48px;
+    box-sizing: border-box;
+
+    .logo {
+      margin-bottom: 60px;
+    }
+
+    form {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      label, input, button {
+        width: 100%;
+        box-sizing: border-box;
+        border: transparent;
+        text-transform: uppercase;
+        font-style: normal;
+        font-weight: 800;
+      }
+
+      label {
+        font-size: 12px;
+        line-height: 15px;
+        color: #fff;
+        margin-bottom: 9px;
+
+        &.password {
+          margin-top: 40px;
+        }
+      }
+
+      input, button {
+        height: 60px;
+        font-family: Mulish, sans-serif;
+      }
+
+      .form-control {
+        width: 100%;
+        position: relative;
+
+        input {
+          padding-left: 16px;
+          background: #fff;
+          border-radius: 4px;
+          font-size: 18px;
+          font-weight: 400;
+          margin: 0;
+          text-transform: none;
+
+          &.invalidInput {
+            border: 1px solid #FF3737;
+          }
+        }
+
+        svg {
+          position: absolute;
+          top: 20px;
+          right: 16px;
+          color: #FF3737;
+        }
+
+        .invalid {
+          font-size: 12px;
+          font-weight: 400;
+          color: #EDF9F5;
+          line-height: 15px;
+        }
+      }
+
+      button {
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        margin-top: 55px;
+        background: #2A9482;
+        transition: .5s;
+        color: #fff;
+        border-radius: 4px;
+        font-size: 18px;
+        line-height: 23px;
+
+        &:hover {
+          cursor: pointer;
+          background: rgba(42, 148, 130, .7);
+        }
+
+        &:disabled {
+          cursor: not-allowed;
+          background: rgba(42, 148, 130, .3);
+        }
+      }
+    }
+
+  }
+}

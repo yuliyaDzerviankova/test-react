@@ -1,0 +1,29 @@
+@media (max-width: 500px) {
+  body {
+    height: 100%;
+    .container {
+
+      .form {
+        padding: 30px;
+        background: transparent;
+
+        form {
+          input {
+            margin-bottom: 5px;
+
+            &#email {
+              margin-bottom: 5px;
+
+              +.invalid {
+                margin-bottom: 20px;
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+
+  }
+}
